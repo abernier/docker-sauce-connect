@@ -16,9 +16,5 @@ WORKDIR /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux
 
 ENV PATH /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux/bin:$PATH
 
-ENTRYPOINT ["sc"]
-
 EXPOSE 4445
 EXPOSE 8032
-
-CMD ["--version"]
