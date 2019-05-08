@@ -1,7 +1,7 @@
 FROM java:8-jre
 MAINTAINER Arnau Siches <arnau@ustwo.com>
 
-ENV SAUCE_VERSION 4.4.11
+ENV SAUCE_VERSION 4.5.3
 
 WORKDIR /usr/local/sauce-connect
 
