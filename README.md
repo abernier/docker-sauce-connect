@@ -1,11 +1,12 @@
 # Docker Sauce Labs Connect
 
-This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy) 4.4.6 on Java 8.
+This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy) 4.5.3 on Java 8.
 
 
 ## Versions
 
-* 4.4, latest
+* 4.5 (latest)
+* 4.4
 * 4.3
 
 ## Usage
