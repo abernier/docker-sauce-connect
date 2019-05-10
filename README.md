@@ -5,5 +5,5 @@ This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/D
 # Usage
 
 ```sh
-docker run -p 4445:4445 -e SAUCE_USERNAME=abernier -e SAUCE_ACCESS_KEY=********-****-****-****-************ sauce-connect -x https://eu-central-1.saucelabs.com/rest/v1
+docker run -p 4445:4445 -e SAUCE_USERNAME=abernier -e SAUCE_ACCESS_KEY=********-****-****-****-************ abernier/docker-sauce-connect -x https://eu-central-1.saucelabs.com/rest/v1
 ```
