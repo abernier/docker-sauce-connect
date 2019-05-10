@@ -4,7 +4,8 @@ ENV SAUCE_VERSION 4.5.3
 
 WORKDIR /usr/local/sauce-connect
 
-RUN apt-get update -qqy \
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list \
+ && apt-get update -qqy \
  && apt-get install -qqy \
       wget \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
