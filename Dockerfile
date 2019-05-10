@@ -1,5 +1,4 @@
 FROM java:8-jre
-MAINTAINER Arnau Siches <arnau@ustwo.com>
 
 ENV SAUCE_VERSION 4.5.3
 
@@ -18,3 +17,6 @@ ENV PATH /usr/local/sauce-connect/sc-$SAUCE_VERSION-linux/bin:$PATH
 
 EXPOSE 4445
 EXPOSE 8032
+
+ENTRYPOINT ["sc"]
+CMD ["--version"]
