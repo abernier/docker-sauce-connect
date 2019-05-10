@@ -2,44 +2,8 @@
 
 This docker image runs [Sauce Labs Connect](https://wiki.saucelabs.com/display/DOCS/Sauce+Connect+Proxy) 4.5.3 on Java 8.
 
-
-## Versions
-
-* 4.5 (latest)
-* 4.4
-* 4.3
-
-## Usage
-
-It sets the `sc` CLI as the entrypoint so it can be used as a replacement via
-an shell alias:
+# Usage
 
 ```sh
-$ alias sc="docker run --rm -it -p 8000:8000 abernier/sauce-connect"
-$ sc -P 8000 -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY
+docker run -p 4445:4445 -e SAUCE_USERNAME=abernier -e SAUCE_ACCESS_KEY=********-****-****-****-************ sauce-connect -x https://eu-central-1.saucelabs.com/rest/v1
 ```
-
-Or just
-
-```sh
-$ docker run --rm -it \
-             -p 0.0.0.0:8000:8000 \
-             abernier/sauce-connect -P 8000 \
-                                 -u $SAUCE_USERNAME \
-                                 -k $SAUCE_ACCESS_KEY \
-                                 --tunnel-identifier foo
-```
-
-## Contact
-
-* open.source@ustwo.com
-
-
-## Maintainers
-
-* Arnau Siches (@arnau)
-
-
-## License
-
-There is no guarantee of active maintenance. Licensed under [MIT](./LICENSE).
